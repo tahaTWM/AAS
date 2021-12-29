@@ -3,7 +3,7 @@ git init
 git add -A
 
 rem set /p repo="Enter Repo Name : "
-git remote add origin https://github.com/tahaTWM/AAS.git
+git remote add origin https://github.com/tahaTWM/Automatic_Attendance_System_python.git
 
 rem set /p id="Enter Commit Message : "
 set TM=%DATE%, %TIME%

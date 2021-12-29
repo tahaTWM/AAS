@@ -63,13 +63,13 @@ def AAS():  # main function of the application
                     print(
                         f"{name}{', Is Not found in this Students of this Department'}"
                     )
-                    time.sleep(1)
+                    time.sleep(3)
                 if name in names:
                     studentName.append(name)
                     studentTime.append(today)
                     print("add is done")
                     print(studentName)
-                    time.sleep(1)
+                    time.sleep(3)
 
         except:
             print("error")
