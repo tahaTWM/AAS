@@ -1,5 +1,6 @@
 @echo off
 
+pip install --upgrade pip --user
 
 pip install pyzbar
 
