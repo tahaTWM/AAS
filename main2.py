@@ -59,17 +59,21 @@ def AAS():  # main function of the application
                 # jsonLoad = json.loads(name)
                 # print(jsonLoad['name'])
 
-                if name not in names:
-                    print(
-                        f"{name}{', Is Not found in this Students of this Department'}"
-                    )
-                    time.sleep(3)
+                # if name not in names:
+                #     print(
+                #         f"{name}{', Is Not found in this Students of this Department'}"
+                #     )
+                #     time.sleep(3)
                 if name in names:
-                    studentName.append(name)
-                    studentTime.append(today)
-                    print("add is done")
-                    print(studentName)
-                    time.sleep(3)
+                    if name not in studentName:
+                        studentName.append(name)
+                        studentTime.append(today)
+                        print("add is done")
+                        print(studentName)
+                        time.sleep(3)
+                    else:
+                        print("Student Already Added to student List")
+                        time.sleep(1)
 
         except:
             print("error")
